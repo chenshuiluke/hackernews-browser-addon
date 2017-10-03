@@ -5,7 +5,15 @@ function request(){
         var to_add = [];
         for(var counter = 0; counter < data.length; counter++){
             var item = data[counter];
-            var new_list_item = "<a href=\"" + item.url + "\">" + item.title + "</a>";
+
+            var new_list_item;
+            if(typeof item.url === "undefined"){
+                new_list_item = "<a target=\"_blank\" href=\"https://news.ycombinator.com/item?id=" + item.id + "\">" + item.title + "</a>";
+            }
+            else{
+                new_list_item = "<a target=\"_blank\" href=\"" + item.url + "\">" + item.title + "</a>";
+            }
+            
             to_add.push(new_list_item);
         }
         container.append(to_add);
