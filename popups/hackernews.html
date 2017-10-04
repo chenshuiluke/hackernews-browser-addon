@@ -3,9 +3,13 @@
     <head>
         <script type="text/javascript" src="../scripts/jquery.min.js">
         </script>
+        <script type="text/javascript" src="../scripts/loading-bar.js">
+        </script>        
         <script type="text/javascript" src="../scripts/hackernews.js">          
         </script>
+        
         <link rel="stylesheet" href="../css/splendor.min.css">
+        <link rel="stylesheet" href="../css/loading-bar.css">
         <style>
             a{
                 display:block;
@@ -13,10 +17,22 @@
                 padding:0px !important;
                 padding-left: 10px !important;
                 text-align: left;
+                text-decoration: underline;
             }
+
+            body{
+                width: 600px;
+                min-height:400px;
+            }
+
+            .ldBar-label { display:none; }
         </style>
 
     </head>
-    <body id="item-list">
+    <body>
+        <div id="loader" style="width:100%;display:block;" class="ldBar" data-preset="bubble" data-value="100"></div>
+        
+        <div id="item-list">
+        </div>
     </body>
 </html>

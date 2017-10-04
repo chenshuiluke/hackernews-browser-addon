@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Hackernews Browser Addon",
-  "version": "1.0.2",
+  "version": "1.0.3",
 
   "description": "An addon that lists top hackernews stories from https://ng-hackernews.lukecs.com",
 
@@ -11,7 +11,8 @@
   },
   "permissions": [
     "https://ng-hackernews.lukecs.com/*",
-    "webRequest"
+    "webRequest",
+    "unlimitedStorage"
   ],
 
   "browser_action": {
@@ -23,7 +24,7 @@
 
   "background":
   {
-      "scripts": ["scripts/jquery.min.js", "scripts/hackernews.js"]
+      "scripts": ["scripts/jquery.min.js", "scripts/hackernews.js", "scripts/loading-bar.js"]
   }
 
 }
