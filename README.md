@@ -1,5 +1,5 @@
 # hackernews-browser-addon
-A Firefox and Chrome addon that allows you to view top hackernews posts with the click of a button!
+A Firefox and Chrome addon that lists up to FIVE HUNDRED of the latest and hottest Hacker News stories with the click of a button.
 
 [Firefox Installation Page](https://addons.mozilla.org/en-US/firefox/addon/hackernews-browser-addon/)
 
