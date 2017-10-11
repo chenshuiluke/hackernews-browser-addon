@@ -1,38 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script type="text/javascript" src="../scripts/jquery.min.js">
-        </script>
-        <script type="text/javascript" src="../scripts/loading-bar.js">
-        </script>        
-        <script type="text/javascript" src="../scripts/hackernews.js">          
-        </script>
-        
-        <link rel="stylesheet" href="../css/splendor.min.css">
-        <link rel="stylesheet" href="../css/loading-bar.css">
+    <head>       
         <style>
-            a{
-                display:block;
-                margin:0px !important;
-                padding:0px !important;
-                padding-left: 10px !important;
-                text-align: left;
-                text-decoration: underline;
-            }
 
             body{
                 width: 600px;
-                min-height:400px;
+                min-height:800px;
+                overflow: hidden;
             }
-
-            .ldBar-label { display:none; }
+            iframe{
+                height: 800px; width: 600px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
+                overflow-y: scroll;
+            }
         </style>
 
     </head>
     <body>
-        <div id="loader" style="width:100%;display:block;" class="ldBar" data-preset="bubble" data-value="100"></div>
-        
-        <div id="item-list">
-        </div>
+        <iframe src="https://ng-hackernews.lukecs.com"></iframe>
     </body>
 </html>

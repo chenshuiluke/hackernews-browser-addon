@@ -2,29 +2,19 @@
 
   "manifest_version": 2,
   "name": "Hackernews Browser Addon",
-  "version": "1.0.3",
+  "version": "1.0.5",
 
-  "description": "An addon that lists top hackernews stories from https://ng-hackernews.lukecs.com",
+  "description": "An addon that lists up to FIVE HUNDRED of the latest and hottest Hacker News stories with the click of a button.",
 
   "icons": {
     "48": "icons/hackernews.png"
   },
-  "permissions": [
-    "https://ng-hackernews.lukecs.com/*",
-    "webRequest",
-    "unlimitedStorage"
-  ],
 
   "browser_action": {
     "default_icon": "icons/39_hackernews.png",
     "default_title": "Hackernews Addon",
     "default_popup": "popups/hackernews.html",
     "browser_style": true
-  },
-
-  "background":
-  {
-      "scripts": ["scripts/jquery.min.js", "scripts/hackernews.js", "scripts/loading-bar.js"]
   }
 
 }
