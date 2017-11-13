@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Hackernews Browser Addon",
-  "version": "1.0.5",
+  "version": "1.0.6",
 
   "description": "An addon that lists up to FIVE HUNDRED of the latest and hottest Hacker News stories with the click of a button.",
 
